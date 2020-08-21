@@ -1,0 +1,14 @@
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - uses: jcansdale/v0.1.242-gabf0a85fce@v0.1.242-gabf0a85fce
+      with:
+        path: ${{ github.repository_owner }}
