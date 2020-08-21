@@ -11,4 +11,4 @@ jobs:
 
     - uses: jcansdale/gpr@action
       with:
-        path: ${{ github.repository_owner }}
+        command: ""
