@@ -6,6 +6,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - run: |
+        dotnet new console
+        dotnet pack
+
+    - uses: jcansdale/gpr@action
+      with:
+        command: push
+        path: "**/*.nupkg"
+
     - uses: jcansdale/gpr@action
       with:
         command: list
