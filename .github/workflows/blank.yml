@@ -20,3 +20,9 @@ jobs:
       with:
         command: list
         path: ${{ github.repository }}
+
+    - uses: jcansdale/gpr@action
+      with:
+        command: delete
+        path: ${{ github.repository }}
+        args: "--version 1.0.0"
