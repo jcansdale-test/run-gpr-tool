@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: jcansdale/gpr@v0.1.248-gfe6c80bfe5
+    - uses: jcansdale/gpr@action
       with:
         command: list
         path: octodemo
