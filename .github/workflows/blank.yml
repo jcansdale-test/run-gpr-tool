@@ -10,7 +10,7 @@ jobs:
         dotnet new console
         dotnet pack
 
-    - uses: jcansdale/gpr@0.1.255-gb0eaba2381
+    - uses: jcansdale/gpr@v0.1.255-gb0eaba2381
       with:
         command: push
         path: "**/*.nupkg"
