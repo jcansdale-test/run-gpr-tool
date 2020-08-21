@@ -9,4 +9,4 @@ jobs:
     - uses: jcansdale/gpr@v0.1.248-gfe6c80bfe5
       with:
         command: list
-        path: ${{ github.repository }}
+        path: octodemo/packages
